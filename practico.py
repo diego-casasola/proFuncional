@@ -33,4 +33,15 @@ def obtener_palabras(message):
     return message.split()
 
 
+def contar_palabras(message, function):
+    # return
+    diccionario = {}
+    list = function(message)
+    for palabra in list:
+        diccionario[palabra] = len(palabra)
+    return diccionario
+
+def count_characters_from_words(message):
+	split_message = lambda words: words.split(' ')
+	return {word: len(word) for word in split_message(message)}
 

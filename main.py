@@ -20,15 +20,17 @@ if __name__ == '__main__':
 
     a  = [21, 27, 23, 20, 21, 25, 15]
     b= [8, 46, 45, 49, 15, 6, 31]
+    c = [100, 100, 100]
     # print(f'Mayores a 22: {get_num(a)}')
     print(f'suma de valores mayores a 22: {suma_all(a, get_num)}')
     print(f'suma de valores mayores a 22: {suma_all(b, get_num)}')
 
     print('---------------------------')
     print(f'Aplicar IVA: {apply_iva_price_list(a, apply_iva)}')
-    print(f'Aplicar IVA: {sum_precios(b, apply_iva_price_list,apply_iva)}')
+    print(f'Aplicar IVA: {sum_precios(c, apply_iva_price_list,apply_iva)}')
 
     print('---------------------------')
-    print()
+    message = 'Hola, como estas?'
+    print(contar_palabras(message, obtener_palabras))
+    print(count_characters_from_words(message))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
